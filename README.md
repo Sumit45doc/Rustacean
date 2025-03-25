@@ -1,7 +1,7 @@
 Installation:
 download the exe file from website and run it
 
-- rustc is the command for running rust program similar to node for  nodejs
+- rustc is the rust compiler which creates executable for running rust program similar to node for  nodejs
 - rustup is cli for updating the version of the rust similar to nvm for nodejs
 - rustfmt is cli command to format the rust code similiar to prittier
 - Rustaceans is the name for rust developer
