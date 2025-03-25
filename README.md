@@ -1,4 +1,4 @@
-installation:
+Installation:
 download the exe file from website and run it
 
 - rustc is the command for running rust program similar to node for  nodejs
@@ -8,7 +8,8 @@ download the exe file from website and run it
 - cargo is the package manager like npm
 - Packages are know as crates in rust
 
-****Create project with cargo ****
+## Cargo
+Create project with cargo
 ```shell
 cargo new <Project_name>
 ```
@@ -46,3 +47,24 @@ cargo new <Project_name>
   ```shell
     cargo doc --open
   ```
+
+## Variables & Mutability
+Variables are let and const.
+- let:  is immutable as default mean the variable cannot be re-assigned. To re-assign the mut keyword need to be add.
+Ex: let mut age = 5;
+- const: is also immutable 
+  - It never be re-assigned.
+  - Required to define type of the variable
+  - It can be global variable
+  - cannot assign let variable as value of const variable
+    - Ex: let age = 5; const myfutureAge: u32 = 20 + age; it will throw an error.
+  - use Capital letter convention  
+
+Shadowing: is the way to re declare the variable.<br>
+Ex: let mut age = 10;
+age = age + 1;
+let age = age;<br>
+The advantage of using shadowing is:
+  - After mutating the value, we can make it unmutatable.
+  - The variable type can be change like string to number. 
+
