@@ -26,6 +26,12 @@ cargo new <Project_name>
     cargo build --release
   ```
 
+- for checking the code use command:
+  ```shell
+    cargo check
+  ```
+    Note: This will speed up development process by providing quicker way to check if updated code still compiles. This does not generates any executable.
+
 - To install any crate write the crate name with version in Cargo.toml file.  <br>Example:
   rand = "0.9.0"
 **Alternative using command**
