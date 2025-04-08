@@ -55,22 +55,36 @@ cargo new <Project_name>
   ```
 
 ## Variables & Mutability
-Variables are let and const.
-- let:  is immutable as default mean the variable cannot be re-assigned. To re-assign the mut keyword need to be add.
-Ex: let mut age = 5;
-- const: is also immutable 
+Variables are created by using keyword "let".
+- A variable is immutable by default mean the variable cannot be re-assigned. To re-assign the "mut" keyword shouild be used.
+- Ex: 
+  ```shell
+    let mut age = 5;
+  ```
+
+- "const" keyword is used to create a Constant which is also immutable(Once assigned it's value can't be changed).
   - It never be re-assigned.
-  - Required to define type of the variable
-  - It can be global variable
-  - cannot assign let variable as value of const variable
-    - Ex: let age = 5; const myfutureAge: u32 = 20 + age; it will throw an error.
-  - use Capital letter convention  
+  - It is Required to define type of the constant(must be annotated).
+  - It can have Global or Local scope. 
+  - Cannot assign let variable as value of const variable
+    
+  - Ex: 
+  ```shell
+    let age = 5;
+    const myfutureAge: u32 = 20 + age; //it will throw an error.
+  ```
+  - Use Capital letters to name a constant.  
 
-Shadowing: is the way to re declare the variable.<br>
-Ex: let mut age = 10;
-age = age + 1;
-let age = age;<br>
+Shadowing: is the way to re-declare the variable.<br>
+
+- Ex: 
+  ```shell
+    let mut age = 10;
+    age = age + 1;
+    let age = age;
+  ```
+
 The advantage of using shadowing is:
-  - After mutating the value, we can make it unmutatable.
-  - The variable type can be change like string to number. 
-
+  - After mutating the value, we can make it immutable.
+  - The variable type can be changed like string to number.(Making use of only one variable instead seperate variable for string and number).
+    
