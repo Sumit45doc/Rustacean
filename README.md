@@ -57,7 +57,7 @@ cargo new <Project_name>
 ## Variables & Mutability
 Variables are created by using keyword "let".
 - A variable is immutable by default mean the variable cannot be re-assigned. To re-assign the "mut" keyword shouild be used.
-- Ex: 
+
   ```shell
     let mut age = 5;
   ```
@@ -68,7 +68,6 @@ Variables are created by using keyword "let".
   - It can have Global or Local scope. 
   - Cannot assign let variable as value of const variable
     
-  - Ex: 
   ```shell
     let age = 5;
     const myfutureAge: u32 = 20 + age; //it will throw an error.
@@ -77,7 +76,6 @@ Variables are created by using keyword "let".
 
 Shadowing: is the way to re-declare the variable.<br>
 
-- Ex: 
   ```shell
     let mut age = 10;
     age = age + 1;
@@ -88,3 +86,29 @@ The advantage of using shadowing is:
   - After mutating the value, we can make it immutable.
   - The variable type can be changed like string to number.(Making use of only one variable instead seperate variable for string and number).
     
+## Data types
+Unlike JavaScript which is loosely written dynamic language, Rust is a statically typed language which means it must needs to know data type of a variable at compile time. 
+Although the compiler can infer the type of variable, in cases where you need a specific type of variable you must explicitly annotate it.
+
+- Integer type:
+  - Can be unsigned integer or signed intger. 
+  - Can have 8, 16, 32, 64 and 128 bits form available.
+  - If the bit architecture of a computer is not known then a 'arch' can be used.
+
+- Floating type:
+  - Floats are always signed.
+  - Can have 32 and 64 bit size only.
+  - The 64 bits floats have higher precision (numbers after decimal) than 32 bit float.
+
+- Character type:
+  - Four bytes in size.
+  - It is a Unicode scalar value and can store emojis and many more things.
+
+- Tuple type:
+  - Used to group together a number of values with different data types.
+  - Have fixed length, Once decalred can't grow or shrink.
+  - An tuple with no elements or an empty tuple is called as a "Unit".
+
+- Array type: 
+  - Used for grouping number of values having same data type.
+  - Fixed length.
