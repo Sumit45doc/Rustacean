@@ -112,3 +112,21 @@ Although the compiler can infer the type of variable, in cases where you need a 
 - Array type: 
   - Used for grouping number of values having same data type.
   - Fixed length.
+
+## Functions
+"fn" keyword is used to define a function.
+type annotation is necesary in case of parameterized functions to know type of parameters.
+
+- Statements vs Expressions
+  - A function is made up of series of statements.
+  - Statements are instructions that perform some action and do not return a value.
+  - Expression has a resultant value or returns something.
+  - 5 + 6, which is an expression that evaluates to the value 11. 
+  - So function declaration is a statement while function calling is an expression.
+  - Expressions do not include ending semicolons. 
+  - If you add a semicolon to the end of an expression, you turn it into a statement, and it will then not return a value
+
+- Functions with return values
+  - The type of the return value must be declared after an arrow (->)
+  - You can return early from a function by using the return keyword and specifying a value
+  - Most functions return the last expression implicitly. 
