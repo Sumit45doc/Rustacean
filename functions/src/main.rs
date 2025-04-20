@@ -9,7 +9,7 @@ fn main() {
 
     println!("The value of sum is {sum}");
 
-    if(is_even(5)){
+    if is_even(5){
         println!("The number is even");
     }
     else {

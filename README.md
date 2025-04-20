@@ -130,3 +130,20 @@ type annotation is necesary in case of parameterized functions to know type of p
   - The type of the return value must be declared after an arrow (->)
   - You can return early from a function by using the return keyword and specifying a value
   - Most functions return the last expression implicitly. 
+
+## If else else-if 
+If else is considered as a expression and not as a statement.
+Because it is a expression if else results in a value which can be assigned to a varible.
+
+  ```shell
+    let age = if is_valid(10){10}else{0};   //If else used for assigning value to a variable.
+    
+    fn is_valid(x:i32) -> bool{
+      if x > 0{
+      return true;
+      }
+      else{
+        return false;
+      }
+    }
+  ```
