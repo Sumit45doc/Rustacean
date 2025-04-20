@@ -147,3 +147,16 @@ Because it is a expression if else results in a value which can be assigned to a
       }
     }
   ```
+## Code repetition with loop
+- "loop" keyword can be used to create an infinite loop.
+- "break" can be used to break the loop while "return" can be used to break from a function.
+
+# "loop labels" is a useful feature in rust which lets us name a loop. The naming of a loop is useful to distinguish between multiple loops.
+
+## While loop
+- We can run conditional loops with while loop.
+- The loop iterates until the resulting condition renders to false.
+
+## for loop
+- We can use for loop to iterate over an collection like arrays, lists etc.
+- We can also iterate over a range with for loop.
