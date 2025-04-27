@@ -160,3 +160,23 @@ Because it is a expression if else results in a value which can be assigned to a
 ## for loop
 - We can use for loop to iterate over an collection like arrays, lists etc.
 - We can also iterate over a range with for loop.
+
+## Variable scope
+- Each varibale in rust has a scope for which it is valid. 
+- Once the varible goes out of scope it is no longer valid and the value of varible is freed/dropped from the memory.
+- so if a variable is decalred inside main function, that is it's scope. Outside which it is not accessible.
+
+## Memory and Allocation
+- In case of a harcoded string literal as its size is known at compile time, it is stored on the stack.
+- In case we create a dynamic string with changing size, it will be stored on heap.
+- In this case a memory must be requested from memory allocator and once the string is no longer needed the memory should be freed.
+
+## Garbage collector
+- In many modern programming languages garbage collector comes preinstalled, whose sole purpose is to take care of dynamically allocated memory on the heap.
+- While in old programming languages like C++, C the programer manually needs to take care of freeing and requesting memory on heap.
+- With manual work comes errors, so sometimes a memory block is missed to be freed or it is freed before it's lifetime.
+- To avoid this rust came up with conecpt of Ownership.
+
+## Ownership
+- Each value in rust has a owner, which can be at most one at a time.
+- When the owner goes out of scope the value will be dropped.

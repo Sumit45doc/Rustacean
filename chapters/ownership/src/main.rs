@@ -21,7 +21,10 @@ fn main() {
     let y = x;      //Here x and y are two different variables, as x is copied to y. Changing x won't affect the value of y and vice versa.
 
     let s1 = String::from("Hello");
-    let s2 = s1;
-    
+    let s2 = s1;                        //Here the value of s1 is passed to s1 and not copied.At this moment both strings point to the same memory location.
+    //From onwards s1 won't be accessible as its scope ends on line 24 and it is no longer valid. This is to follow the single ownership rule of rust.
+
+
+
 
 }
