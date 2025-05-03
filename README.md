@@ -181,3 +181,13 @@ Because it is a expression if else results in a value which can be assigned to a
 - Each value in rust has a owner, which can be at most one at a time.
 - When the owner goes out of scope the value will be dropped.
 
+## The String data type
+- A string in rust is made up of three parts. A pointer to the memory holding the string, lenght and capacity of string.
+- This data is stored on stack, while the actual content of a string is stored on heap.
+- When you make a shallow copy of a string, both the string(original and copied) point to the same memory location on heap which mean they point to the same string.
+- When you make deep copy(using Copy trait) the contents of original string is copied on some different memory location on heap and both the strings points to the there very own instance of memory.
+
+## Ownership and functions
+- When we pass a string which doesn't implements copy trait the owenership of the string variable os transfeered to the calling function
+- When we pass a integer which does implement copy trait, it passes a copy of interger to the calling function and ownership is not lost.
+- When a function returns a string data type the ownership of returned string is passed to the main function.
